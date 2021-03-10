@@ -1,65 +1,108 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { motion } from "framer-motion"
+import Image from 'next/image'
 
 export default function Home() {
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
+
   return (
+    <div >
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      <motion.h1 initial="hidden" animate="visible" variants={variants} transition={{duration:1}}>
+        Home page
+      </motion.h1>
+      <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+      <motion.button className={styles.btn}
+        whileHover={{scale:1.1, textShadow: "0px 0px 3px black" }}
+      >Press me</motion.button>
+      <motion.button className={styles.btn}
+        whileHover={{scale:1.1}}
+      
+      >Find more</motion.button>
     </div>
+    <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+    <Image src="/jaws-3d.jpg" alt="jaws" width={200} height={300}/>
+    <Image src="/cat.jpg" alt="jaws" width={200} height={300}/>
+
+
+
+    <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
+        >
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+
+
+
+      <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
+        >
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+
+
+
+      <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
+        >
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+
+
+
+      <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
+        >
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+
+
+
+      <motion.div className={styles.animatedObj}
+        initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
+        transition={{ duration: 2, easeIn:5 }}
+        >
+      <h4>Why do we use it?</h4>
+      <div className={styles.animatedObjInner}>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+      <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
+      </div>
+      </motion.div>
+    </div>
+
   )
 }

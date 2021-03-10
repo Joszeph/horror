@@ -1,0 +1,16 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li{
+    list-style: none;
+    margin: 2vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(175, 175, 175);
+}
+
+.navigation li:hover{
+    color: white;
+}

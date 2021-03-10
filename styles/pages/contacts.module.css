@@ -1,0 +1,15 @@
+.container {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+
+  
+  
+  
+  @media (max-width: 600px) {
+    .grid {
+     
+    }
+  }
+  
