@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const HorrorList =({movies})=>{
-
+     
     //const {API_URL} = process.env
     const apiUrl = 'https://strapi-next-movie-demo.herokuapp.com'
 
