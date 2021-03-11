@@ -14,9 +14,9 @@ module.exports = {
         return config
     },
 
-    images: {
-        deviceSizes: [320, 420, 768, 1024, 1200],
-        domains: ["https://res.cloudinary.com/"],
-        loader: 'cloudinary'  
-      }
+    // images: {
+    //     deviceSizes: [320, 420, 768, 1024, 1200],
+    //     domains: ["https://res.cloudinary.com/"],
+    //     loader: 'cloudinary'  
+    //   }
 }
