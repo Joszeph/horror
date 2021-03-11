@@ -2,6 +2,7 @@ import styles from '../styles/pages/horror-list.module.css'
 import {NextSeo} from 'next-seo'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const HorrorList =({movies})=>{
 
@@ -28,7 +29,7 @@ const HorrorList =({movies})=>{
         <section className={styles.cardsList}>
             {movies.map(movie=>(
                 <div className={styles.card}>
-                <img src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450}/>
+                <Image src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450}/>
                 <div className={styles.overlay}>
                 <Link href={`/movies/${movie.genre.slug}/${movie.slug}`} >
                 <a>More...</a>

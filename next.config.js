@@ -14,8 +14,5 @@ module.exports = {
         return config
     },
 
-    images: {
-        loader: 'imgix',
-        path: 'https//res.cloudinary.com/media-upload-base/image/upload/',
-      }
+    
 }
