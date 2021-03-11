@@ -28,7 +28,7 @@ const HorrorList =({movies})=>{
         <section className={styles.cardsList}>
             {movies.map(movie=>(
                 <div className={styles.card}>
-                <img src={apiUrl+movie.Poster.url} alt={movie.Title} className={styles.image} width={450}/>
+                <img src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450}/>
                 <div className={styles.overlay}>
                 <Link href={`/movies/${movie.genre.slug}/${movie.slug}`} >
                 <a>More...</a>
