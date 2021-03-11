@@ -33,6 +33,9 @@ const About =()=>{
             <div>
                 <h4>Why do we use it?</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
             </div>
         </motion.div>   
     )
