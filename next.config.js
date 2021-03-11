@@ -12,5 +12,9 @@ module.exports = {
         config.resolve.alias['public'] = path.join(__dirname, 'public')
 
         return config
-    }
+    },
+
+    images: {
+        domains: ["res.cloudinary.com"],
+      }
 }
