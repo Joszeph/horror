@@ -11,7 +11,7 @@ export default function Home() {
   }
 
   return (
-    <div >
+    <>
     <div className={styles.container}>
       <motion.h1 initial="hidden" animate="visible" variants={variants} transition={{duration:1}}>
         Home page
@@ -34,8 +34,6 @@ export default function Home() {
       
       >Find more</motion.button>
     </div>
-    <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
-    <Image src="/jaws-3d.jpg" alt="jaws" width={200} height={300}/>
-    <Image src="/cat.jpg" alt="jaws" width={200} height={300}/>
+    </>
   )
 }
