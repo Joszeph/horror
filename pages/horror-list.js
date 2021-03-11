@@ -22,14 +22,14 @@ const HorrorList =({movies})=>{
     return(
         <>
         <div className={styles.title}>
-            <h1>The Horror list:</h1> 
+            <h1>The List of Horrors:</h1> 
         </div>
         <div className={styles.container}>
         <NextSeo {...SEO} />
         <section className={styles.cardsList}>
             {movies.map(movie=>(
                 <div className={styles.card}>
-                <Image src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450} height={500} layout='responsive' quality={75}/>
+                <Image src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450} height={500} />
                 <div className={styles.overlay}>
                 <Link href={`/movies/${movie.genre.slug}/${movie.slug}`} >
                 <a>More...</a>
