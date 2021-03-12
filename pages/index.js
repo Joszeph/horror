@@ -16,7 +16,7 @@ export default function Home() {
       <motion.h1 initial="hidden" animate="visible" variants={variants} transition={{duration:1}}>
         Home page
       </motion.h1>
-      <motion.div className={styles.animatedObj}
+      {/* <motion.div className={styles.animatedObj}
         initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}}
         transition={{ duration: 2, easeIn:5 }}
         >
@@ -25,7 +25,11 @@ export default function Home() {
       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
       <Image src="/jaws.jpg" alt="jaws" width={200} height={300}/>
       </div>
-      </motion.div>
+      </motion.div> */}
+
+      <Image src="/jaws_movie_poster_c3db2e99f5.jpg" alt="jaws" width={200} height={300} />
+
+
       <motion.button className={styles.btn}
         whileHover={{scale:1.1, textShadow: "0px 0px 3px black" }}
       >Press me</motion.button>

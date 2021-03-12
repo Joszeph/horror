@@ -14,5 +14,10 @@ module.exports = {
         return config
     },
 
+    images: {
+        loader: "cloudinary",
+        path: "https://res.cloudinary.com/media-upload-base/",
+      }
+
     
 }
