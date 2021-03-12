@@ -23,7 +23,6 @@ const HorrorList =({movies})=>{
         <>
         <div className={styles.title}>
             <h1>The Horror list:</h1>
-            <h4>Pick one</h4>
         </div>
         <div className={styles.container}>
         <NextSeo {...SEO} />

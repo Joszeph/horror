@@ -18,5 +18,5 @@ module.exports = {
         deviceSizes: [320, 420, 768, 1024, 1200],
         domains: ["https://res.cloudinary.com/media-upload-base/image/upload/"],
         loader: 'cloudinary'  
-      }
+      },
 }
