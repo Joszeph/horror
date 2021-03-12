@@ -28,7 +28,7 @@ const HorrorList =({movies})=>{
         <NextSeo {...SEO} />
         <section className={styles.cardsList}>
             {movies.map(movie=>(
-                <div className={styles.card}>
+                <div className={styles.card} key={movie.id}>
                 <Image src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450} height={500}/>
                 <div className={styles.overlay}>
                 <Link href={`/movies/${movie.genre.slug}/${movie.slug}`} >
