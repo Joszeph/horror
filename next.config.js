@@ -16,7 +16,7 @@ module.exports = {
 
     images: {
         loader: "cloudinary",
-        path: "https://res.cloudinary.com",
+        path: "https://res.cloudinary.com/media-upload-base/",
       }
 
     
