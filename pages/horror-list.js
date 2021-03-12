@@ -26,7 +26,7 @@ const HorrorList =({movies})=>{
         </div>
         <div className={styles.container}>
         <NextSeo {...SEO} />
-        <section className={styles.cardsList}>
+        <section>
             {movies.map(movie=>(
                 <div className={styles.card} key={movie.id}>
                 <Image src={movie.Poster.url} alt={movie.Title} className={styles.image} width={450} height={500}/>
